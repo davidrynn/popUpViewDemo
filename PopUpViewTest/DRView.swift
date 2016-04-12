@@ -40,24 +40,23 @@ class DRView: UIView {
             let translation = recognizer.translationInView(superview)
             self.center = CGPointMake(lastLocation.x, lastLocation.y + translation.y)
         }
+        //MARK: TODO: refactor
+        if (recognizer.state == UIGestureRecognizerState.Ended){
+            
+                    if(lastLocation.y >= self.superview?.bounds.height){
+                        
+                        self.center.y = (self.superview?.bounds.height)!                    }
+                    else {
+                        self.center.y = (self.superview?.center.y)!
+                    }
+        }
     }
-    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         //TODO: Remove subview to front?
         self.superview?.bringSubviewToFront(self)
         lastLocation = self.center
     }
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        //if self.frame is closer to top/bottom pop controller to top/bottom
-        if let superCenter = self.superview?.center {
-            if (lastLocation.y <= superCenter.y/2) {
-                self.center = superCenter
-            } else {
-                self.center.y = superCenter.y/4
-            }
-        }
-        
-    }
+
     
-    override func t
+    
 }

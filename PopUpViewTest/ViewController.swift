@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        // self.addChildViewController(popUpView)
-        popUpView.view.frame = CGRectMake(0, self.view.frame.size.height/2, self.view.frame.size.width, self.view.frame.size.height)
+        popUpView.view.frame = CGRectMake(0, self.view.frame.size.height*3/4, self.view.frame.size.width, self.view.frame.size.height)
         self.view.addSubview(popUpView.view)
 
         
