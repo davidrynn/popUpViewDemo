@@ -14,6 +14,8 @@
 		17C73F3F1CAAE0A70020888E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C73F3D1CAAE0A70020888E /* LaunchScreen.storyboard */; };
 		17C73F4A1CAAE0A80020888E /* PopUpViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F491CAAE0A80020888E /* PopUpViewTestTests.swift */; };
 		17C73F551CAAE0A80020888E /* PopUpViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F541CAAE0A80020888E /* PopUpViewTestUITests.swift */; };
+		17C73F631CAAE1650020888E /* DRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F621CAAE1650020888E /* DRViewController.swift */; };
+		17C73F651CAAE77F0020888E /* DRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F641CAAE77F0020888E /* DRView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		17C73F501CAAE0A80020888E /* PopUpViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopUpViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C73F541CAAE0A80020888E /* PopUpViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewTestUITests.swift; sourceTree = "<group>"; };
 		17C73F561CAAE0A80020888E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C73F621CAAE1650020888E /* DRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRViewController.swift; sourceTree = "<group>"; };
+		17C73F641CAAE77F0020888E /* DRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				17C73F341CAAE0A70020888E /* AppDelegate.swift */,
+				17C73F621CAAE1650020888E /* DRViewController.swift */,
 				17C73F361CAAE0A70020888E /* ViewController.swift */,
+				17C73F641CAAE77F0020888E /* DRView.swift */,
 				17C73F381CAAE0A70020888E /* Main.storyboard */,
 				17C73F3B1CAAE0A70020888E /* Assets.xcassets */,
 				17C73F3D1CAAE0A70020888E /* LaunchScreen.storyboard */,
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					17C73F301CAAE0A70020888E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = E5LW2CH45C;
 					};
 					17C73F441CAAE0A80020888E = {
 						CreatedOnToolsVersion = 7.2;
@@ -256,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C73F651CAAE77F0020888E /* DRView.swift in Sources */,
 				17C73F371CAAE0A70020888E /* ViewController.swift in Sources */,
 				17C73F351CAAE0A70020888E /* AppDelegate.swift in Sources */,
+				17C73F631CAAE1650020888E /* DRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PopUpViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gov.doitt.drynn.PopUpViewTest;
@@ -410,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PopUpViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gov.doitt.drynn.PopUpViewTest;
