@@ -13,8 +13,8 @@ class DRView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let panRecognizer = UIPanGestureRecognizer(target: self, action: "detectPan:")
-        self.gestureRecognizers = [panRecognizer]
+        //MARK: TODO: move gesture to viewcontroller
+
         
         if !UIAccessibilityIsReduceTransparencyEnabled() {
             self.backgroundColor = UIColor.clearColor()
@@ -34,28 +34,7 @@ class DRView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func detectPan(recognizer: UIPanGestureRecognizer){
-        if let superview = self.superview {
-            let translation = recognizer.translationInView(superview)
-            self.center = CGPointMake(lastLocation.x, lastLocation.y + translation.y)
-        }
-        //MARK: TODO: refactor
-        if (recognizer.state == UIGestureRecognizerState.Ended){
-            
-                    if(lastLocation.y >= self.superview?.bounds.height){
-                        
-                        self.center.y = (self.superview?.bounds.height)!                    }
-                    else {
-                        self.center.y = (self.superview?.center.y)!
-                    }
-        }
-    }
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        //TODO: Remove subview to front?
-        self.superview?.bringSubviewToFront(self)
-        lastLocation = self.center
-    }
+
 
     
     

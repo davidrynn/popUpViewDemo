@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170D502E1CBEA5ED0040061E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D502D1CBEA5ED0040061E /* UIView+Layout.swift */; };
 		17C73F351CAAE0A70020888E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F341CAAE0A70020888E /* AppDelegate.swift */; };
 		17C73F371CAAE0A70020888E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F361CAAE0A70020888E /* ViewController.swift */; };
 		17C73F3A1CAAE0A70020888E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C73F381CAAE0A70020888E /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170D502D1CBEA5ED0040061E /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		17C73F311CAAE0A70020888E /* PopUpViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopUpViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C73F341CAAE0A70020888E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17C73F361CAAE0A70020888E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				17C73F621CAAE1650020888E /* DRViewController.swift */,
 				17C73F361CAAE0A70020888E /* ViewController.swift */,
 				17C73F641CAAE77F0020888E /* DRView.swift */,
+				170D502D1CBEA5ED0040061E /* UIView+Layout.swift */,
 				17C73F381CAAE0A70020888E /* Main.storyboard */,
 				17C73F3B1CAAE0A70020888E /* Assets.xcassets */,
 				17C73F3D1CAAE0A70020888E /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 				17C73F371CAAE0A70020888E /* ViewController.swift in Sources */,
 				17C73F351CAAE0A70020888E /* AppDelegate.swift in Sources */,
 				17C73F631CAAE1650020888E /* DRViewController.swift in Sources */,
+				170D502E1CBEA5ED0040061E /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +499,7 @@
 				17C73F5B1CAAE0A80020888E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17C73F5C1CAAE0A80020888E /* Build configuration list for PBXNativeTarget "PopUpViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				17C73F5E1CAAE0A80020888E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17C73F5F1CAAE0A80020888E /* Build configuration list for PBXNativeTarget "PopUpViewTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				17C73F611CAAE0A80020888E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
