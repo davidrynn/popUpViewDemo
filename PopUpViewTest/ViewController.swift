@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     lazy var popUpViewY: CGFloat = {
         
         return self.view.height*4/5
-    
+        
     }()
     
     override func viewDidLoad() {
@@ -30,13 +30,18 @@ class ViewController: UIViewController {
         popUpViewController.view.gestureRecognizers = [panRecognizer]
     }
     
-    
+    //put viewdidlayout so that we know everything else is formatted correctly before subviews are layed out.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        popUpViewController.view.frame = CGRectMake(0, self.popUpViewY, self.view.width, self.view.height)
+        
+    }
     
     func detectPan(recognizer: UIPanGestureRecognizer){
         
         let translation = recognizer.translationInView(self.view)
         self.popUpViewController.view.center.y = lastLocation.y + translation.y
-
+        
         if recognizer.state == UIGestureRecognizerState.Ended {
             UIView.animateWithDuration(0.1, delay: 0.0, options: .CurveEaseInOut, animations: {
                 if self.popUpViewController.view.center.y >= self.view.height {
@@ -44,26 +49,15 @@ class ViewController: UIViewController {
                 } else {
                     self.popUpViewController.view.centerVerticallyInSuperview()
                 }
-                
                 }, completion: nil)
-            
         }
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        //TODO: Remove subview to front?
-//        self.view.bringSubviewToFront(self.popUpViewController.view)
         lastLocation = self.popUpViewController.view.center
     }
     
     
-    
-    //put viewdidlayout so that we know everything else is formatted correctly before subviews are layed out.
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        popUpViewController.view.frame = CGRectMake(0, self.popUpViewY, self.view.width, self.view.height)
-        
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

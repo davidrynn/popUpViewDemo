@@ -17,6 +17,7 @@
 		17C73F551CAAE0A80020888E /* PopUpViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F541CAAE0A80020888E /* PopUpViewTestUITests.swift */; };
 		17C73F631CAAE1650020888E /* DRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F621CAAE1650020888E /* DRViewController.swift */; };
 		17C73F651CAAE77F0020888E /* DRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F641CAAE77F0020888E /* DRView.swift */; };
+		17E570281CC5805D00ACD17B /* DRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E570271CC5805D00ACD17B /* DRView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		17C73F561CAAE0A80020888E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17C73F621CAAE1650020888E /* DRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRViewController.swift; sourceTree = "<group>"; };
 		17C73F641CAAE77F0020888E /* DRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRView.swift; sourceTree = "<group>"; };
+		17E570271CC5805D00ACD17B /* DRView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DRView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				17C73F621CAAE1650020888E /* DRViewController.swift */,
 				17C73F361CAAE0A70020888E /* ViewController.swift */,
 				17C73F641CAAE77F0020888E /* DRView.swift */,
+				17E570271CC5805D00ACD17B /* DRView.xib */,
 				170D502D1CBEA5ED0040061E /* UIView+Layout.swift */,
 				17C73F381CAAE0A70020888E /* Main.storyboard */,
 				17C73F3B1CAAE0A70020888E /* Assets.xcassets */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E570281CC5805D00ACD17B /* DRView.xib in Resources */,
 				17C73F3F1CAAE0A70020888E /* LaunchScreen.storyboard in Resources */,
 				17C73F3C1CAAE0A70020888E /* Assets.xcassets in Resources */,
 				17C73F3A1CAAE0A70020888E /* Main.storyboard in Resources */,

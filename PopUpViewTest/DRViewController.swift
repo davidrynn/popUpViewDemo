@@ -11,11 +11,12 @@ import UIKit
 class DRViewController: UIViewController {
 
     override func loadView() {
-        self.view = DRView()
+        self.view = DRView.instanceFromNib()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.getDRView().labelTitle = "Cheese!"
         // Do any additional setup after loading the view.
     }
     
@@ -24,6 +25,12 @@ class DRViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    private func getDRView() -> DRView {
+        return self.view as! DRView
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 
     /*
     // MARK: - Navigation
