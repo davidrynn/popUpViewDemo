@@ -19,6 +19,7 @@
 		17C73F651CAAE77F0020888E /* DRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C73F641CAAE77F0020888E /* DRView.swift */; };
 		17E570281CC5805D00ACD17B /* DRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E570271CC5805D00ACD17B /* DRView.xib */; };
 		17FCC3C11CCE9A9500036DEE /* TopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17FCC3C01CCE9A9500036DEE /* TopBar.xib */; };
+		17FCC3C31CCE9B0000036DEE /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FCC3C21CCE9B0000036DEE /* TopBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		17C73F641CAAE77F0020888E /* DRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRView.swift; sourceTree = "<group>"; };
 		17E570271CC5805D00ACD17B /* DRView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DRView.xib; sourceTree = "<group>"; };
 		17FCC3C01CCE9A9500036DEE /* TopBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBar.xib; sourceTree = "<group>"; };
+		17FCC3C21CCE9B0000036DEE /* TopBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				17C73F641CAAE77F0020888E /* DRView.swift */,
 				17E570271CC5805D00ACD17B /* DRView.xib */,
 				17FCC3C01CCE9A9500036DEE /* TopBar.xib */,
+				17FCC3C21CCE9B0000036DEE /* TopBarView.swift */,
 				170D502D1CBEA5ED0040061E /* UIView+Layout.swift */,
 				17C73F381CAAE0A70020888E /* Main.storyboard */,
 				17C73F3B1CAAE0A70020888E /* Assets.xcassets */,
@@ -278,6 +281,7 @@
 				17C73F371CAAE0A70020888E /* ViewController.swift in Sources */,
 				17C73F351CAAE0A70020888E /* AppDelegate.swift in Sources */,
 				17C73F631CAAE1650020888E /* DRViewController.swift in Sources */,
+				17FCC3C31CCE9B0000036DEE /* TopBarView.swift in Sources */,
 				170D502E1CBEA5ED0040061E /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
