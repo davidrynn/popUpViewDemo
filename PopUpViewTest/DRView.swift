@@ -55,6 +55,7 @@ class DRView: UIView {
     }
     override func layoutSubviews() {
         super.layoutSubviews()
+        self.label.center = self.center
         self.bringSubviewToFront(label)
     }
 }
